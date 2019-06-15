@@ -1,16 +1,31 @@
 package models;
 
 public class Encrypt {
+    private String mWord;
+    private Integer mKey;
+
+    //Getter
+    public String getWord(){
+        return mWord;
+    }
+    public Integer getKey(){
+        return mKey;
+    }
+    //Setter
+    public  void setWord(String newWord){
+        this.mWord = newWord;
+    }
+    public  void setKey(int newKey){
+        this.mKey = newKey;
+    }
+
 
     public String encrypter(){
-        CeaserCipher newCeaser = new CeaserCipher();
         StringBuilder encryptedText = new StringBuilder();
-        newCeaser.setmWord("hi");
-        newCeaser.setmKey(1);
 
-        for(int i = 0; i < newCeaser.getmWord().length(); i++ ){
-            char wordChar = newCeaser.getmWord().charAt(i);
-            char encrypted = (char) (wordChar + newCeaser.getmKey());
+        for(int i = 0; i < getWord().length(); i++ ){
+            char wordChar = getWord().charAt(i);
+            char encrypted =  (char) (wordChar + getKey());
             encryptedText.append(encrypted);
         }
         return encryptedText.toString();

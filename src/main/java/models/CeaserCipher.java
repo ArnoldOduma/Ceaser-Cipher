@@ -5,13 +5,11 @@ public class CeaserCipher {
     private String mWord;
     private int mKey;
 
-    //Getter Methods
-    public String getmWord(){
-        return mWord;
+    public CeaserCipher(String word, int key){
+        this.mWord = word;
+        this.mKey = key;
     }
-    public int getmKey(){
-        return mKey;
-    }
+
 
     //Setter Methods
     public void setmWord(String word){
@@ -20,4 +18,13 @@ public class CeaserCipher {
     public void setmKey(int key){
         this.mKey = key;
     }
+
+    //Getter Methods
+    public String getmWord(){
+        return mWord;
+    }
+    public int getmKey(){
+        return mKey;
+    }
+
 }
