@@ -48,7 +48,7 @@ public class CeaserCipherTest {
 
     @Test
     public void ceaserCipher_decrypter_String(){
-         CeaserCipher testCeaser = new CeaserCipher("Bf", 1);
+        CeaserCipher testCeaser = new CeaserCipher("Bf", 1);
         Decrypt testDecrypt = new Decrypt();
         testDecrypt.setWord(testCeaser.getmWord());
         testDecrypt.setKey(testCeaser.getmKey());
