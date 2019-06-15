@@ -16,4 +16,11 @@ public class CeaserCipherTest {
         CeaserCipher testCeaser = new CeaserCipher("Word",2);
         assertEquals(2,testCeaser.getmKey());
     }
+
+    @Test
+    public void ceaserCipher_getmKey_String() {
+        CeaserCipher testCeaser = new CeaserCipher("Hello",3);
+        assertEquals("Hello",testCeaser.getmWord());
+    }
+
 }
