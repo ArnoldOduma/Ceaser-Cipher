@@ -23,4 +23,10 @@ public class CeaserCipherTest {
         assertEquals("Hello",testCeaser.getmWord());
     }
 
+    @Test
+    public void ceaserCipher_setmWoord_String() {
+        CeaserCipher testCeaser = new CeaserCipher("Hello",3);
+        testCeaser.setmWord("hi");
+        assertEquals("hi",testCeaser.getmWord());
+    }
 }
