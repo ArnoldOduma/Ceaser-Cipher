@@ -5,8 +5,18 @@ public class CeaserCipher {
     private String mWord;
     private int mKey;
 
-    public void CeaserCipher(String word, int key){
-
+    public CeaserCipher(String word, int key){
+        this.mWord = word;
+        this.mKey = key;
     }
+
+    //Getter Methods
+    public String getmWord(){
+        return mWord;
+    }
+    public int getmKey(){
+        return mKey;
+    }
+
 
 }
