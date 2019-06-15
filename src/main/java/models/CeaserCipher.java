@@ -18,5 +18,11 @@ public class CeaserCipher {
         return mKey;
     }
 
-
+    //Setter Methods
+    public void setmWord(String word){
+        this.mWord = word;
+    }
+    public void setmKey(int key){
+        this.mKey = key;
+    }
 }
