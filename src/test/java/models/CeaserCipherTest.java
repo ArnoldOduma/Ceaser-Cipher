@@ -45,7 +45,11 @@ public class CeaserCipherTest {
         assertEquals("ij",testEncrypt.encrypter());
     }
 
-
+    @Test
+    public void ceaserCipher_decrypter_String(){
+        Decrypt testDecrypt = new Decrypt();
+        assertEquals("hi",testDecrypt.decrypter());
+    }
 
 
 
