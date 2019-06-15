@@ -1,7 +1,7 @@
 package models;
 
 public class Decrypt {
-     private String mWord;
+    private String mWord;
     private Integer mKey;
 
     //Getter
@@ -18,6 +18,7 @@ public class Decrypt {
     public  void setKey(int newKey){
         this.mKey = newKey;
     }
+
 
     public String decrypter(){
         String decryptedText = "";
