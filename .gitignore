@@ -44,6 +44,9 @@ gradle
 gradlew.bat
 gradlew
 settings.gradle
+.settings/
+.project
+.classpath
 
 # IntelliJ #
 ############

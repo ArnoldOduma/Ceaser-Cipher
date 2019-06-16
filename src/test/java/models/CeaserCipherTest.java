@@ -38,7 +38,7 @@ public class CeaserCipherTest {
     }
 
     @Test
-    public void ceaseCipher_encrypter_String(){
+    public void ceaserCipher_encrypter_String(){
         CeaserCipher testCeaser = new CeaserCipher("Ae", 1);
         Encrypt testEncrypt = new Encrypt();
         testEncrypt.setWord(testCeaser.getmWord());
